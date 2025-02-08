@@ -1,0 +1,35 @@
+.post {
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+.post_header {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    margin-bottom: 10px;
+}
+
+.post_info {
+    margin-left: 10px; /* Space between avatar and text */
+    display: flex;
+    flex-direction: column; /* Stack name and description vertically */
+}
+
+.post_info h2 {
+    margin: 0; /* Remove default margin from heading */
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.2; /* Reduce line height for tighter spacing */
+}
+
+.post_info p {
+    margin: 4px 0 0; /* Add minimal spacing above the description */
+    font-size: 14px; /* Adjust font size as needed */
+    color: #666; /* Optional: Make description text slightly lighter */
+}
+.post_buttons{
+    display:flex;
+    justify-content:space-between;
+}

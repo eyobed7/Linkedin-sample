@@ -1,0 +1,67 @@
+/* General Widget Styles */
+.widgets {
+    width: 300px; /* Fixed width for the widget */
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 16px; /* Padding inside the widget */
+    margin-bottom: 16px; /* Space between widgets */
+}
+
+/* Widget Header */
+.widgets_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between title and icon */
+    margin-bottom: 16px; /* Space below the header */
+}
+
+.widgets_header h2 {
+    font-size: 18px; /* Font size for the title */
+    font-weight: 600; /* Slightly bold font weight */
+    color: #2979ff; /* LinkedIn blue color */
+    margin: 0; /* Remove default margin */
+}
+
+.widgets_header .MuiSvgIcon-root {
+    font-size: 24px; /* Larger size for the info icon */
+    color: #8b95a5; /* Grayish-blue color for the icon */
+    cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+/* Individual Article Styles */
+.widgets_article {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    margin-bottom: 12px; /* Space between articles */
+}
+
+/* Left Side (Dot Icon) */
+.widgets_articleLeft {
+    display: flex;
+    align-items: center;
+    margin-right: 8px; /* Space between dot and text */
+}
+
+.widgets_articleLeft .MuiSvgIcon-root {
+    font-size: 8px; /* Small size for the dot */
+    color: #8b95a5; /* Grayish-blue color for the dot */
+}
+
+/* Right Side (Article Content) */
+.widgets_articleRight {
+    flex: 1; /* Take up remaining space */
+}
+
+.widgets_articleRight h4 {
+    font-size: 14px; /* Font size for the heading */
+    font-weight: 600; /* Bold font weight */
+    color: #222; /* Dark gray color for the heading */
+    margin: 0 0 4px 0; /* Space below the heading */
+}
+
+.widgets_articleRight p {
+    font-size: 12px; /* Font size for the subtitle */
+    color: #606770; /* Light gray color for the subtitle */
+    margin: 0; /* Remove default margin */
+}

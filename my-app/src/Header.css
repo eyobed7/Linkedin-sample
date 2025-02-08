@@ -1,0 +1,91 @@
+/* General Header Styles */
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between; /* Distribute left and right sections */
+    align-items: center; /* Vertically align items */
+    border-bottom: 1px solid #e5e6eb; /* Subtle bottom border */
+    padding: 8px 32px; /* Adjusted padding for better spacing */
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+/* Left Section (Logo and Search) */
+.header_left {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Spacing between logo and search */
+}
+
+.header_left > img {
+    object-fit: contain;
+    height: 28px; /* Adjusted size for LinkedIn logo */
+}
+
+.header_search {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dce6f1; /* Border color for search bar */
+    border-radius: 24px; /* Rounded corners */
+    background-color: #f7f9fc; /* Light gray background */
+    padding: 4px 8px; /* Padding for spacing */
+}
+
+.header_search > input {
+    border: none;
+    outline: none;
+    background-color: transparent; /* Transparent background */
+    padding: 8px 12px; /* Padding for input field */
+    width: 250px; /* Fixed width */
+    font-size: 14px; /* Font size */
+    color: #333; /* Text color */
+}
+
+.header_search > svg {
+    margin-right: 8px; /* Space between search icon and input */
+    color: #8b95a5; /* Icon color */
+}
+
+/* Right Section (Icons and Avatar) */
+.header_right {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Reduced spacing between items */
+    margin-right: 32px; /* Move items slightly away from the right border */
+}
+
+.headerOption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+.headerOption:hover {
+    color: #0a66c2; /* Change icon and text color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.headerOption_icon {
+    font-size: 24px; /* Adjust icon size */
+    color: #8b95a5; /* Default icon color */
+}
+
+.headerOption_title {
+    font-size: 12px; /* Smaller font size for text below icons */
+    color: #8b95a5; /* Default text color */
+    margin-top: 4px; /* Reduce space between icon and text */
+}
+
+/* Avatar Styling */
+.header_avatar {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; /* Circular avatar */
+    border: 1px solid #dce6f1; /* Subtle border around avatar */
+}

@@ -1,0 +1,151 @@
+/* General Sidebar Styles */
+
+.sidebar {
+  flex: 0.2; /* Keep it at 20% of the width */
+  min-width: 250px; /* Prevent it from shrinking too much */
+  max-width: 300px; /* Optional: Limit how wide it can be */
+  background-color: #f5f5f5; 
+  color: #333;
+  font-family: Arial, sans-serif;
+} 
+  /* Top Section with Background Image */
+  .sidebar_top {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align items */
+    padding: 16px;
+    position: relative; /* Required for positioning the avatar */
+    height: 80px;
+    /* Set a fixed height for the top section */
+    overflow: hidden; /* Ensure the background doesn't overflow */
+  }
+
+
+  /* Background Image Behind the Avatar */
+  .sidebar_top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    filter: blur(5px); /* Optional: Blur the image for a softer effect */
+    z-index: -1; /* Place the background behind the avatar and text */
+  }
+
+
+  .sidebar_top >img{
+    margin-bottom: -20px;
+    width: 210px;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+  }
+
+  /* Ensure the avatar is visible on top of the background */
+  .sidebar_avatar {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px; /* Space between avatar and text */
+    border: 2px solid #fff; /* Optional: Add a white border for contrast */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better visibility */
+    position: relative; /* Ensure the avatar stays above the background */
+    z-index: 2; /* Ensure the avatar is above the overlay */
+  }
+  
+  /* Ensure the user info is visible on top of the background */
+  .sidebar_userInfo {
+    text-align: center; /* Center-align text */
+    z-index: 2; /* Ensure the text is above the overlay */
+    position: relative; /* Ensure the text stays above the background */
+  }
+  
+  .sidebar_userInfo h2 {
+    font-size: 14px; /* Adjust font size for compactness */
+    margin: 0;
+    margin-bottom: 4px; /* Space between name and email */
+  }
+  
+  .sidebar_userInfo h4 {
+    font-size: 12px; /* Adjust font size for compactness */
+    margin: 0;
+    color: #666; /* Lighter color for email */
+  }
+  
+  /* Stats Section */
+  .sidebar_stats {
+    padding: 16px;
+    flex: 1; /* Allow this section to take up remaining space */
+  }
+  .sidebar_stat {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px; /* Space between stats */
+  } 
+  .sidebar_stat p {
+    margin: 0;
+    font-size: 14px;
+  }
+  .sidebar_statNumber {
+    font-weight: bold;
+    color: #0077b5; /* LinkedIn-like blue */
+  }  
+  /* Bottom Section */
+  .sidebar_bottom { 
+    padding: 16px;
+    border-top: 16px solid white; /* Separator line */
+  }
+  .sidebar_recentItem {
+    display: flex;
+    font-size: 14px;
+    cursor: pointer;
+    color:gray;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    padding: 5px;
+  } 
+  .sidebar_recentItem:hover {
+    background-color: #f5f5f5; /* Light gray background on hover */
+    border-radius: 10px; /* Optional: Add a border radius for a softer look */
+    cursor: pointer;
+    color: black;
+  }
+  .sidebar_bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #666; /* Lighter color for "Recent" */
+  }  
+  .sidebar_hash {
+    margin-right: 10px;
+    margin-left: 5px;
+     /* LinkedIn-like blue */
+  }
+
+  
+/* .sidebar{
+    top:80px;
+    position:sticky;
+    flex:0.2;
+    border-radius: 10px ;
+    text-align: center  ;
+    height:fit-content;
+    margin: 1px;
+}
+.sidebar_avatar{
+    margin-bottom: 10px;
+}
+.sidebar_top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid lightgray;
+    border-bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+    background-color: white;
+    padding-bottom: 10px;
+} */

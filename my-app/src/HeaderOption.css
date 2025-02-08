@@ -1,0 +1,36 @@
+/* Header Option Styles */
+.headerOption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #59616e; /* Default icon color */
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.headerOption:hover {
+    color: #0a66c2; /* LinkedIn blue on hover */
+}
+
+.headerOption_icon {
+    font-size: 20px; /* Icon size */
+}
+
+.headerOption_title {
+    font-size: 12px; /* Title font size */
+    font-weight: 400;
+    margin-top: 2px; /* Reduced space between icon and title */
+}
+
+/* Profile Avatar */
+.header_avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; /* Circular avatar */
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.header_avatar:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}

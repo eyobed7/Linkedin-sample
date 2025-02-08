@@ -1,0 +1,14 @@
+/* App.css */
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    background-color: #f3f2ef; /* Light background */
+  }
+  
+  .app_body {
+    display: flex;
+    flex: 1; /* Take up remaining space */
+    padding: 20px; /* Add some spacing */
+    gap: 20px; /* Space between sidebar and feed */
+  }
